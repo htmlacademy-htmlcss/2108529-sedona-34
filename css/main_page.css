@@ -18,10 +18,15 @@ a{
 }
 
 /* ---------- header ---------- */
+.navigation, .logo, .navigation-page, .navigation-user{
+   display: inline-block;
+}
+
 .navigation{
    position: relative;
    background-color: #fff;
    height: 85px;
+   width: fit-content;
 }
 
 .logo{
@@ -31,31 +36,27 @@ a{
 }
 
 .navigation-page, .navigation-user{
-   position: absolute;
+   width: fit-content;
    list-style: none;
-   transform: translate(0, -50%);
-   top: 50%;
-   display: flex;
-   align-items: center;
    height: inherit;
 }
 
+.navigation-page{
+   margin-right: 550px;
+}
+
 .navigation-page li, .navigation-user li{
-   display: inline;
+   float: left;
+   display: flex;
+   align-items: center;
+   height: inherit;
 }
 
 .navigation-page a, .navigation-user a{
    text-decoration: none;
 }
 
-.navigation-page{
-   left: 360px;
-}
-
 .navigation-page li{
-   display: flex;
-   align-items: center;
-   height: inherit;
    margin: 0px 0px 0px 80px;
    font-size: 26px;
    font-weight: 700;
@@ -65,10 +66,6 @@ a{
 
 .navigation-page li:hover{
    border-bottom: 5px solid #756157;
-}
-
-.navigation-user{
-   right: 100px;
 }
 
 .navigation-user li{
@@ -88,7 +85,7 @@ a{
    content: "12";
    position: absolute;
    right: -59%;
-   top: -35%;
+   top: 20%;
    width: 25px;
    height: 25px;
    background-color: #7DB54F;
