@@ -83,5 +83,6 @@ a{
    font-weight: 700;
    font-size: 23px;
    text-transform: uppercase;
+   cursor: pointer;
 }
 /* ---------- end header ---------- */
