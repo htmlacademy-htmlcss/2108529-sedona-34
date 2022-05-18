@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+   font-family: 'PT Sans', sans-serif;
+}
+
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box
+}
+
+a{
+   color: inherit;
+}
+
+/* ---------- header ---------- */
+.navigation{
+   position: relative;
+   background-color: #fff;
+   height: 85px;
+}
+
+.logo{
+   margin-left: 110px;
+   width: 250px;
+   height: 88px;
+}
+
+.navigation-page, .navigation-user{
+   position: absolute;
+   list-style: none;
+   transform: translate(0, -50%);
+   top: 50%;
+   display: flex;
+   align-items: center;
+}
+
+.navigation-page li, .navigation-user li{
+   display: inline;
+}
+
+.navigation-page a, .navigation-user a{
+   text-decoration: none;
+}
+
+.navigation-page{
+   left: 360px;
+}
+
+.navigation-page li{
+   margin: 0px 0px 0px 80px;
+   font-size: 26px;
+   font-weight: 700;
+   line-height: 26px;
+   color: #000;
+}
+
+.navigation-user{
+   right: 100px;
+}
+
+.navigation-user li{
+   margin-right: 35px;
+}
+
+.navigation-user-search, .navigation-user-favorite{
+   width: 27px;
+   height: 27px;
+}
+
+.navigation-user-button{
+   width: 265px;
+   height: 50px;
+   background: #756157;
+   border-radius: 4px;
+   color: #fff;
+   font-family: 'PT Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 23px;
+   text-transform: uppercase;
+}
+/* ---------- end header ---------- */
