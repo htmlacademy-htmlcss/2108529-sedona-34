@@ -38,10 +38,6 @@ ul{
   text-decoration: none;
 }
 
-.button-in-favorites{
-  background-color: #7DB54F;
-}
-
 .section-title {
   font-size: 30px;
   line-height: 36px;
@@ -239,6 +235,11 @@ ul{
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+}
+
+.fiter-button-apply{
+  color: #ffffff;
+  background-color: #82B3D3;
 }
 
 .fiter-button-reset{
