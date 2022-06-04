@@ -21,15 +21,12 @@ body{
   margin: 0;
 }
 
-button{
-  border: none;
-}
-
 ul{
   list-style: none;
 }
 
 .button{
+  border: none;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -41,11 +38,7 @@ ul{
   text-decoration: none;
 }
 
-.button-blue{
-  background-color: #82B3D3;
-}
-
-.button-green{
+.button-in-favorites{
   background-color: #7DB54F;
 }
 
@@ -66,14 +59,9 @@ ul{
   color: #333333;
 }
 
-.white{
-  color: #FFFFFF;
-}
-
 /* !Header */
 
-.navigation-list a{
-  font-family: "PT Sans", sans-serif;
+.navigation-link{
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -111,6 +99,7 @@ ul{
 /* !Advantages */
 .advantages-item{
   text-align: center;
+  color: #000000;
 }
 
 .advantages-title{
@@ -118,7 +107,12 @@ ul{
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
+}
+
+.advantages-number{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 .advantages-description{
@@ -128,35 +122,32 @@ ul{
   color: #333333;
 }
 
-.advantages-item-blue{
+.advantages-real-town, .advantages-devils-bridge{
   background-color: #82B3D3;
-}
-
-.advantages-item-blue h3, .advantages-item-blue p{
   color: #ffffff;
 }
 
-.advantages-item-{
-  background-color: #82B3D3;
+.real-town-description, .devils-bridge-description{
+  color: #ffffff;
 }
 
-.advantages-item-gray{
+.advantages-housing, .advantages-souvenirs, .advantages-square, .advantages-tourists{
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-white{
+.advantages-food{
   background-color: #ffffff;
 }
 
-.advantages-item-cyan{
+.advantages-road{
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-first::after{
+.advantages-real-town::after{
   content: url("../images/index-images/advantages-photo-1.jpg");
 }
 
-.advantages-second::before{
+.advantages-devils-bridge::before{
   content: url("../images/index-images/advantages-photo-2.jpg");
 }
 
@@ -171,24 +162,27 @@ ul{
 }
 
 .newsletter .field{
-  font-family: inherit;
+  font-family: inherit; /* тут точно нужен inherit */
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
 }
 
+.newsletter-title, .newsletter-description{
+  color: white;
+}
+
 .newsletter-catalog{
   background: #ffffff;
 }
 
-.newsletter-catalog h2, .newsletter-catalog p{
-  color: #000000;
+.newsletter-button{
+  background-color: #82B3D3;
 }
 
 /* !social-media */
 .footer-phone{
-  font-family: inherit;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
@@ -262,7 +256,7 @@ ul{
 }
 
 .catalog-results-select{
-  font-family: inherit;
+  font-family: inherit; /* тут точно нужен inherit */
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -303,9 +297,16 @@ ul{
   margin-left: 5px;
 }
 
+.button-add-to-favorite{
+  background-color: #82B3D3;
+}
+
+.button-in-favorite{
+  background-color: #7DB54F;
+}
+
 /* !pagination */
 .pagination-link{
-  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -326,3 +327,5 @@ ul{
   line-height: 21px;
   font-weight: 400;
 }
+
+
