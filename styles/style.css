@@ -36,6 +36,7 @@ ul{
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .section-title {
@@ -237,18 +238,19 @@ ul{
   font-weight: 400;
 }
 
-.fiter-button-apply{
+.filter-button-apply{
   color: #ffffff;
   background-color: #82B3D3;
 }
 
-.fiter-button-reset{
+.filter-button-reset{
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #ffffff;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 /* !catalog-search-results */
@@ -328,5 +330,4 @@ ul{
   line-height: 21px;
   font-weight: 400;
 }
-
 
