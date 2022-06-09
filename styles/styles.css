@@ -182,15 +182,15 @@ ul{
   color: #ffffff;
 }
 
-.advantages-housing, .advantages-souvenirs, .advantages-square, .advantages-tourists{
+.additional-item-bright{
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-food{
+.additional-item-white{
   background-color: #ffffff;
 }
 
-.advantages-road{
+.additional-item-dark{
   background-color: rgba(131, 179, 211, 0.2);
 }
 
