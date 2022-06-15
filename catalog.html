@@ -11,35 +11,34 @@
 
   <body>
     <div class="page-container">
+
       <header class="page-header">
         <div class="page-header-container">
-          <img class="header-logo" src="images/index-images/header-logo.svg" alt="sedona logo" width="139"
-            height="70" />
+          <img class="header-logo" src="images/index-images/header-logo.svg" alt="sedona logo" width="140"
+               height="66" />
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-item">
-                <a class="navigation-link" href="#">Главная</a>
+                <a class="navigation-link" href="index.html">Главная</a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">О Седоне</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="catalog.html">Гостиницы</a>
+                <a class="navigation-link navigation-link-active" href="#">Гостиницы</a>
               </li>
             </ul>
-            <ul class="navigation-list navigation-user">
-              <li class="user-navigation-item">
-                <a class="navigation-link" href="#"><img src="images/index-images/search.svg" alt="search" width="18"
-                    height="18"></a>
+          </nav>
+          <nav class="navigation-user">
+            <ul class="navigation-user-list">
+              <li class="navigation-user-item">
+                <a class="navigation-user-link" href="#"><img src="images/index-images/search.svg" alt="search" width="18" height="18"></a>
               </li>
-              <li class="user-navigation-item">
-                <a class="navigation-link" href="#"><img src="images/index-images/favorite.svg" alt="favorite"
-                    width="18" height="17"></a>
-              </li>
-              <li class="user-navigation-item">
-                <a class="button" href="#">Хочу сюда!</a>
+              <li class="navigation-user-item">
+                <a class="navigation-user-link" href="#"><img src="images/index-images/favorite.svg" alt="favorite" width="18" height="17"></a>
               </li>
             </ul>
+            <a class="button navigation-user-button" href="#">Хочу сюда!</a>
           </nav>
         </div>
       </header>
@@ -87,7 +86,6 @@
                   </li>
                 </ul>
               </fieldset>
-
               <fieldset class="filter-group">
                 <legend class="filter-group-title">Тип Жилья:</legend>
                 <ul class="filter-list">
@@ -111,15 +109,16 @@
                   </li>
                 </ul>
               </fieldset>
-
-              <fieldset class="filter-group">
+              <fieldset class="filter-group filter-price">
                 <legend class="filter-group-title">Стоимость, ₽:</legend>
-                <input class="price-filter-input" type="text" placeholder="от" />
-                <input class="price-filter-input" type="text" placeholder="до" />
-                <input class="price-range-input" type="range" />
+                <div class="price-input-container">
+                  <input class="filter-price-input" type="text" placeholder="от" />
+                  <input class="filter-price-input" type="text" placeholder="до" />
+                </div>
+                <input class="filter-price-range" type="range" />
               </fieldset>
               <div class="catalog-filter-buttons">
-                <button class="button button-blue filter-button-apply" type="submit">Применить</button>
+                <button class="button filter-button-apply" type="submit">Применить</button>
                 <button class="filter-button-reset" type="submit">Сбросить</button>
               </div>
             </form>
@@ -130,7 +129,7 @@
           <div class="search-results-top-container">
             <h2 class="section-title search-results-title">Найдено гостиниц: <span>38</span></h2>
             <select class="catalog-results-select" aria-label="Сортировка">
-              <option value="cheap">Сначала дешевые</option>
+              <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
@@ -152,7 +151,6 @@
               </li>
             </ul>
           </div>
-
           <ul class="product-list">
             <li class="product-card">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
@@ -162,20 +160,23 @@
                 <span class="product-type">Гостиница</span>
                 <span class="product-price">От 4000 ₽</span>
               </p>
-              <a class="button" href="#">Подробнее</a>
-              <button class="button button-add-to-favorite" type="button">
-                В избранное
-              </button>
-              <div class="rating-area">
-                <input type="radio" name="rating" value="1" />
-                <input type="radio" name="rating" value="2" />
-                <input type="radio" name="rating" value="3" />
-                <input type="radio" name="rating" value="4" />
-                <input type="radio" name="rating" value="5" />
+              <div class="card-buttons">
+                <a class="button" href="#">Подробнее</a>
+                <button class="button button-add-to-favorite" type="button">
+                  В избранное
+                </button>
               </div>
-              <p class="rating">Рейтинг: <span class="rating-number">8,5</span></p>
+              <div class="rating-container">
+                <div class="rating-area">
+                  <input type="radio" name="rating" value="1" />
+                  <input type="radio" name="rating" value="2" />
+                  <input type="radio" name="rating" value="3" />
+                  <input type="radio" name="rating" value="4" />
+                  <input type="radio" name="rating" value="5" />
+                </div>
+                <p class="rating">Рейтинг: <span class="rating-number">5,0</span></p>
+              </div>
             </li>
-
             <li class="product-card">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
               <img class="product-card-image" src="images/catalog-images/hotel-2.jpg" alt="product image" width="300"
@@ -184,18 +185,22 @@
                 <span class="product-type">Гостиница</span>
                 <span class="product-price">От 5000 ₽</span>
               </p>
-              <a class="button" href="#">Подробнее</a>
-              <button class="button button-in-favorite" type="button">
-                В избранном
-              </button>
-              <div class="rating-area">
-                <input type="radio" name="rating" value="1" />
-                <input type="radio" name="rating" value="2" />
-                <input type="radio" name="rating" value="3" />
-                <input type="radio" name="rating" value="4" />
-                <input type="radio" name="rating" value="5" />
+              <div class="card-buttons">
+                <a class="button" href="#">Подробнее</a>
+                <button class="button button-in-favorite" type="button">
+                  В избранном
+                </button>
               </div>
-              <p class="rating">Рейтинг: <span class="rating-number">9,2</span></p>
+              <div class="rating-container">
+                <div class="rating-area">
+                  <input type="radio" name="rating" value="1" />
+                  <input type="radio" name="rating" value="2" />
+                  <input type="radio" name="rating" value="3" />
+                  <input type="radio" name="rating" value="4" />
+                  <input type="radio" name="rating" value="5" />
+                </div>
+                <p class="rating">Рейтинг: <span class="rating-number">5,0</span></p>
+              </div>
             </li>
             <li class="product-card">
               <h3 class="product-card-title">Desert Quail Inn</h3>
@@ -205,18 +210,22 @@
                 <span class="product-type">Гостиница</span>
                 <span class="product-price">От 2500 ₽</span>
               </p>
-              <a class="button" href="#">Подробнее</a>
-              <button class="button button-add-to-favorite" type="button">
-                В избранное
-              </button>
-              <div class="rating-area">
-                <input type="radio" name="rating" value="1" />
-                <input type="radio" name="rating" value="2" />
-                <input type="radio" name="rating" value="3" />
-                <input type="radio" name="rating" value="4" />
-                <input type="radio" name="rating" value="5" />
+              <div class="card-buttons">
+                <a class="button" href="#">Подробнее</a>
+                <button class="button button-add-to-favorite" type="button">
+                  В избранное
+                </button>
               </div>
-              <p class="rating">Рейтинг: <span class="rating-number">6,9</span></p>
+              <div class="rating-container">
+                <div class="rating-area">
+                  <input type="radio" name="rating" value="1" />
+                  <input type="radio" name="rating" value="2" />
+                  <input type="radio" name="rating" value="3" />
+                  <input type="radio" name="rating" value="4" />
+                  <input type="radio" name="rating" value="5" />
+                </div>
+                <p class="rating">Рейтинг: <span class="rating-number">5,0</span></p>
+              </div>
             </li>
             <li class="product-card">
               <h3 class="product-card-title">GreenTree Inn</h3>
@@ -226,16 +235,22 @@
                 <span class="product-type">Гостиница</span>
                 <span class="product-price">От 1500 ₽</span>
               </p>
-              <a class="button" href="#">Подробнее</a>
-              <button class="button button-add-to-favorite" type="button">В избранное</button>
-              <div class="rating-area">
-                <input type="radio" name="rating" value="1" />
-                <input type="radio" name="rating" value="2" />
-                <input type="radio" name="rating" value="3" />
-                <input type="radio" name="rating" value="4" />
-                <input type="radio" name="rating" value="5" />
+              <div class="card-buttons">
+                <a class="button" href="#">Подробнее</a>
+                <button class="button button-add-to-favorite" type="button">
+                  В избранное
+                </button>
               </div>
-              <p class="rating">Рейтинг: <span class="rating-number">5,0</span></p>
+              <div class="rating-container">
+                <div class="rating-area">
+                  <input type="radio" name="rating" value="1" />
+                  <input type="radio" name="rating" value="2" />
+                  <input type="radio" name="rating" value="3" />
+                  <input type="radio" name="rating" value="4" />
+                  <input type="radio" name="rating" value="5" />
+                </div>
+                <p class="rating">Рейтинг: <span class="rating-number">5,0</span></p>
+              </div>
             </li>
           </ul>
         </section>
@@ -262,7 +277,6 @@
                 <a class="pagination-link" href="#">10</a>
               </li>
             </ul>
-
             <label class="catalog-footer-select-label" for="catalog-footer-select">Гостиниц на странице:</label>
             <select class="catalog-footer-select" id="catalog-footer-select">
               <option value="1">1</option>
@@ -276,12 +290,12 @@
         </footer>
 
         <section class="newsletter newsletter-catalog">
-          <h2 class="section-title">Подпишитесь на рассылку</h2>
-          <p class="section-description">Только поезная информация и никакого спама, честное бойскаутерское!</p>
+          <h2 class="section-title newsletter-title">Подпишитесь на рассылку</h2>
+          <p class="section-description newsletter-description">Только полезная информация и никакого спама, честное
+            бойскаутерское!</p>
           <form class="subscription-form" action="#">
-            <label class="visually-hidden" for="newsletter-email">E-mail</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required />
+            <input class="newsletter-input" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                   required/>
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
         </section>

@@ -1,6 +1,7 @@
 .DS_Store
 .idea
 .vscode
+outline.css
 *.ai
 *.log
 *.pdf
