@@ -258,8 +258,8 @@ ul {
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
   margin: 0;
   padding: 0;
 }
@@ -548,7 +548,14 @@ ul {
   border: none;
   margin: 0;
   padding: 0;
+}
+
+.filter-group:first-child {
   margin-right: 70px;
+}
+
+.filter-group:nth-child(2) {
+  margin-right: 175px;
 }
 
 .filter-group-title {
@@ -581,7 +588,6 @@ ul {
 
 /* Price filter */
 .filter-price {
-  margin-left: auto;
 }
 
 .filter-price .filter-group-title {
@@ -621,6 +627,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-left: auto;
 }
 
 .filter-button-apply {
@@ -723,6 +730,7 @@ ul {
 .product-card-image {
   order: -1;
   margin-bottom: 16px;
+  object-fit: contain;
 }
 
 .product-card-title {
