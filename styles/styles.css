@@ -282,8 +282,12 @@ ul {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 30px;
-  max-width: 180px;
+  width: min-content;
   text-align: center;
+}
+
+.advantages-second .advantages-title {
+  width: 230px;
 }
 
 .advantages-number {
