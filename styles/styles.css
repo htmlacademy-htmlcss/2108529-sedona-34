@@ -713,11 +713,11 @@ ul {
 .product-list {
   width: 1060px;
   margin: 0 auto;
-  margin-bottom: 66px;
+  margin-bottom: 86px;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
 }
 
 .product-card {
