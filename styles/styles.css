@@ -191,6 +191,14 @@ ul {
   min-width: 160px;
 }
 
+.navigation-user-item:first-child {
+  background: url("../images/index-images/search.svg") no-repeat center;
+}
+
+.navigation-user-item:last-child {
+  background: url("../images/index-images/favorite.svg") no-repeat center;
+}
+
 .navigation-user-item:last-child {
   position: relative;
 }
