@@ -743,6 +743,12 @@ ul {
   padding: 20px;
 }
 
+.product-card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
 .product-card-image {
   order: -1;
   margin-bottom: 16px;
