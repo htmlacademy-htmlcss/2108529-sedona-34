@@ -269,7 +269,7 @@ ul {
   align-items: center;
   flex-grow: 1;
   width: 400px;
-  padding: 80px 85px;
+  padding: 103px 85px;
   text-align: center;
   color: #000000;
 }
@@ -329,19 +329,28 @@ ul {
   color: #ffffff;
 }
 
+.advantage-housing,
+.advantage-food,
+.advantage-souvenirs {
+  padding: 80px 85px;
+}
+
 .advantage-housing:before {
   content: url("../images/index-images/advantage-house.svg");
   margin-bottom: 30px;
+  height: 72px;
 }
 
 .advantage-food:before {
   content: url("../images/index-images/advantage-food.svg");
   margin-bottom: 30px;
+  height: 72px;
 }
 
 .advantage-souvenirs:before {
   content: url("../images/index-images/advantage-souvenirs.svg");
   margin-bottom: 30px;
+  height: 72px;
 }
 
 
