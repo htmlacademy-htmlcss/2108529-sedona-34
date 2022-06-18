@@ -134,17 +134,26 @@ ul {
   box-sizing: border-box;
   min-height: 66px;
   font-size: 20px;
-  line-height: 50px; /* центрируем текст по вертикали в ссылке */
+  line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
   text-align: center;
-  margin: auto 0;
-  padding: 7px 10px;
+  padding: 20px 10px;
 }
 
-.navigation-link-active {
-  border-bottom: 2px solid #756257;
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  left: 10px;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
 }
 
 .navigation-item {
@@ -171,18 +180,14 @@ ul {
   flex-wrap: wrap;
 }
 
-.navigation-user-link {
-  display: flex;
-  min-width: 42px;
-  min-height: 66px;
-}
-
-.navigation-user-link img{
-  margin: auto;
-}
-
 .navigation-user-item {
   flex-grow: 1;
+}
+
+.navigation-user-link {
+  display: block;
+  min-width: 42px;
+  min-height: 66px;
 }
 
 .navigation-user-button {
@@ -191,11 +196,11 @@ ul {
   min-width: 160px;
 }
 
-.navigation-user-item:first-child {
+.navigation-user-item:first-child .navigation-user-link {
   background: url("../images/index-images/search.svg") no-repeat center;
 }
 
-.navigation-user-item:last-child {
+.navigation-user-item:last-child .navigation-user-link {
   background: url("../images/index-images/favorite.svg") no-repeat center;
 }
 
