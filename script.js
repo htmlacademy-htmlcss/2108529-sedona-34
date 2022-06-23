@@ -10,5 +10,3 @@ hotelSearchButton.onclick = function () {
 modalCloseButton.onclick = function () {
   modal.classList.toggle("modal-closed");
 }
-
-// warning message output
