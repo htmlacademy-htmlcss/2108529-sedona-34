@@ -43,7 +43,7 @@
                 </a>
               </li>
             </ul>
-            <a class="button navigation-user-button" href="#hotel-search">Хочу сюда!</a>
+            <button class="button navigation-user-button modal-open-button" type="button">Хочу сюда!</button>
           </nav>
         </div>
       </header>
@@ -395,6 +395,45 @@
         </div>
       </footer>
     </div>
+    <div class="modal-container modal-closed">
+      <div class="modal">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button"><span class="visually-hidden">Закрыть</span></button>
+        <form class="modal-form">
+          <fieldset class="modal-fieldset-dates">
+            <label class="modal-form-label" for="arrival-date">Дата Заезда</label>
+            <input class="modal-form-input" type="text" id="arrival-date">
+            <p class="modal-message">Мы не можем отправить вас в прошлое.</p>
+            <label class="modal-form-label" for="departure-date">Дата Выезда</label>
+            <input class="modal-form-input" type="text" id="departure-date">
+            <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
+          </fieldset>
+
+          <fieldset class="modal-fieldset-people">
+              <label class="modal-form-label" for="adults">Взрослые</label>
+              <div class="input-people-amount-container">
+                <button class="input-people-amount-button amount-minus" type="button"><span class="visually-hidden">Убавить</span></button>
+                <input class="modal-form-input input-people-amount" type="text" id="adults">
+                <button class="input-people-amount-button amount-plus" type="button"><span class="visually-hidden">Прибавить</span></button>
+              </div>
+              <label class="modal-form-label" for="children">Дети</label>
+              <div class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">i</button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
+              </div>
+              <div class="input-people-amount-container">
+                <button class="input-people-amount-button amount-minus" type="button"><span class="visually-hidden">Убавить</span></button>
+                <input class="modal-form-input input-people-amount" type="text" id="children">
+                <button class="input-people-amount-button amount-plus" type="button"><span class="visually-hidden">Прибавить</span></button>
+              </div>
+          </fieldset>
+          <button class="button modal-search-button">Найти</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 
 </html>

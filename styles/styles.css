@@ -33,6 +33,7 @@ html {
 }
 
 body {
+  min-width: 1200px;
   display: flex;
   margin: 0;
   min-height: 100%;
