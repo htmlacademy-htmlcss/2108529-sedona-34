@@ -1,9 +1,9 @@
 // opening and closing modal window
 let modal = document.querySelector(".modal-container"),
-    hotelSearchButton = document.querySelector(".hotel-search-button"),
+    modalOpenButton = document.querySelector(".modal-open-button"),
     modalCloseButton = document.querySelector(".modal-close-button");
 
-hotelSearchButton.onclick = function () {
+modalOpenButton.onclick = function () {
   modal.classList.toggle("modal-closed")
 }
 
