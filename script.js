@@ -4,9 +4,9 @@ let modal = document.querySelector(".modal-container"),
     modalCloseButton = document.querySelector(".modal-close-button");
 
 modalOpenButton.onclick = function () {
-  modal.classList.toggle("modal-closed")
+  modal.classList.remove("modal-closed")
 }
 
 modalCloseButton.onclick = function () {
-  modal.classList.toggle("modal-closed");
+  modal.classList.add("modal-closed");
 }
