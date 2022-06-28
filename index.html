@@ -18,7 +18,7 @@
            height="66"/>
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item  navigation-link-current">
+          <li class="navigation-item navigation-link-current">
             <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
@@ -32,12 +32,12 @@
       <nav class="navigation-user">
         <ul class="navigation-user-list">
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+            <a class="navigation-user-link navigation-user-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+            <a class="navigation-user-link navigation-user-favorite" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
@@ -76,20 +76,20 @@
       <ul class="advantages-list">
         <li class="advantages-item additional-item-bright advantage-housing">
           <h3 class="advantages-title">Жильё</h3>
-          <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <p class="advantages-description">Рекомендуем пожить <br> в настоящем мотеле, <br> все как в кино!</p>
         </li>
         <li class="advantages-item additional-item-white advantage-food">
           <h3 class="advantages-title">Еда</h3>
-          <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <p class="advantages-description">Всегда заказывайте <br> топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li class="advantages-item additional-item-bright advantage-souvenirs">
           <h3 class="advantages-title">Сувениры</h3>
-          <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
+          <p class="advantages-description">Не только китайского, <br> но и настоящего местного производства!</p>
         </li>
       </ul>
       <div class="advantages-second">
         <div class="advantage-column">
-          <h3 class="advantages-title">Там есть мост дьявола</h3>
+          <h3 class="advantages-title">Там есть <br> мост дьявола</h3>
           <p class="advantages-number">- №2 -</p>
           <p class="advantages-description advantages-second-description">Да, по нему можно пройти! Если вы
             осмелитесь, разумеется</p>
@@ -117,15 +117,14 @@
     <section class="hotel-search" id="hotel-search">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
       <p class="section-title">Заинтересовались?</p>
-      <p class="section-description hotel-search-description">Укажите предполагаемые даты поездки, и мы покажем вам
+      <p class="section-description hotel-search-description">Укажите предполагаемые даты поездки, <br> и мы покажем вам
         лучшие предложения гостиниц в Седоне</p>
       <a class="button hotel-search-button" href="catalog.html">Поиск гостиницы в Седоне</a>
     </section>
 
     <section class="newsletter">
       <h2 class="section-title newsletter-title">Подпишитесь на рассылку</h2>
-      <p class="section-description newsletter-description">Только полезная информация и никакого спама, честное
-        бойскаутерское!</p>
+      <p class="section-description newsletter-description">Только полезная информация и никакого спама, честное бойскаутерское!</p>
       <form class="subscription-form" action="#">
         <input class="newsletter-input" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                required/>
@@ -167,7 +166,7 @@
         </li>
       </ul>
       <a class="footer-phone" href="#">+7 (812) 812-12-12</a>
-      <a class="footer-logo" href="htmlacademy.ru">
+      <a class="footer-logo" href="https://htmlacademy.ru">
         <svg class="footer-logo-icon" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 12.9V15.5H2.5V12.9H0Z" fill-rule="evenodd" clip-rule="evenodd"/>
           <path d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z" fill-rule="evenodd" clip-rule="evenodd"/>
@@ -193,22 +192,22 @@
     <button class="modal-close-button"><span class="visually-hidden">Закрыть</span></button>
     <form class="modal-form">
       <fieldset class="modal-fieldset-dates">
-        <label class="modal-form-label" for="arrival-date">Дата Заезда</label>
+        <label class="modal-form-label" for="arrival-date">Дата Заезда:</label>
         <input class="modal-form-input" type="text" id="arrival-date">
         <p class="modal-message">Мы не можем отправить вас в прошлое.</p>
-        <label class="modal-form-label" for="departure-date">Дата Выезда</label>
+        <label class="modal-form-label" for="departure-date">Дата Выезда:</label>
         <input class="modal-form-input" type="text" id="departure-date">
         <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
       </fieldset>
 
       <fieldset class="modal-fieldset-people">
-          <label class="modal-form-label" for="adults">Взрослые</label>
+          <label class="modal-form-label" for="adults">Взрослые:</label>
           <div class="input-people-amount-container">
             <button class="input-people-amount-button amount-minus" type="button"><span class="visually-hidden">Убавить</span></button>
             <input class="modal-form-input input-people-amount" type="text" id="adults">
             <button class="input-people-amount-button amount-plus" type="button"><span class="visually-hidden">Прибавить</span></button>
           </div>
-          <label class="modal-form-label" for="children">Дети</label>
+          <label class="modal-form-label" for="children">Дети:</label>
           <div class="tooltip">
             <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">i</button>
             <span class="tooltip-text" role="tooltip" id="tooltip-label">
