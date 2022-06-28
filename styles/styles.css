@@ -213,8 +213,7 @@ body {
 .navigation-link-current::after {
   content: "";
   position: absolute;
-  right: 10px;
-  left: 10px;
+  width: 100%;
   bottom: 0;
   height: 2px;
   background-color: #756257;
