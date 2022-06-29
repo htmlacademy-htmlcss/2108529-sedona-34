@@ -14,13 +14,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Home";
-  src: url("../fonts/home.woff2") format("woff2");
-  font-style: normal;
-  font-weight: normal;
-}
-
 /* General */
 *,
 *:before,
@@ -482,10 +475,6 @@ body {
 .hotel-search-description {
   padding: 0;
   width: 100%;
-}
-
-.hotel-search-description:second-line {
-  color: red;
 }
 
 .hotel-search-button {
