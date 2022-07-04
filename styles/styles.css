@@ -412,6 +412,10 @@ body {
   padding: 81px 85px;
 }
 
+.advantage-housing {
+  padding: 103px 110px;
+}
+
 .advantage-housing:before {
   content: url("../images/advantages/advantage-house.svg");
   margin-bottom: 30px;
@@ -809,11 +813,11 @@ body {
   left: 0;
 }
 
-.filter-group:first-of-type .filter-list .filter-label:hover .filter-label-mark {
+.filter-label:hover .filter-label-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.filter-group:first-of-type .filter-list .filter-label:active .filter-label-mark {
+.filter-label:active .filter-label-mark {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
