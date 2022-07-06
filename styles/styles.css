@@ -1611,3 +1611,23 @@ body {
 .tooltip-toggle:hover + .tooltip-text {
   display: block;
 }
+
+.stars {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.stars-item {
+  width: 18px;
+  height: 17px;
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.stars-item:not(:last-child) {
+  margin-right: 6px;
+}
