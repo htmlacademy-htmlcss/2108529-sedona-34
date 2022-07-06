@@ -120,12 +120,13 @@ body {
   border: none;
   outline: 2px solid #E5E5E5;
   border-radius: 4px;
-  background-image: url("../images/forms/select-arrow.svg");
+  background-image: url("../images/form-elements/select-arrow.svg");
   background-repeat: no-repeat;
   background-size: 12px 7px;
   background-position: center right 21px;
   background-color: transparent;
   appearance: none;
+  cursor: pointer;
 }
 
 .select:hover {
@@ -154,8 +155,9 @@ body {
   position: relative;
 }
 
-.header-logo {
+.logo {
   position: absolute;
+  z-index: 1;
 }
 
 /*Main navigation*/
@@ -272,11 +274,11 @@ body {
 }
 
 .navigation-user-search {
-  background: url("../images/header/search.svg") no-repeat center;
+  background: url("../images/icons/search.svg") no-repeat center;
 }
 
 .navigation-user-favorite {
-  background: url("../images/header/favorite.svg") no-repeat center;
+  background: url("../images/icons/favorite.svg") no-repeat center;
 }
 
 .navigation-user-item:last-child {
@@ -305,6 +307,7 @@ body {
 }
 
 .welcome-top {
+  position: relative;
   width: 1200px;
   display: flex;
   flex-direction: column;
@@ -322,8 +325,11 @@ body {
 }
 
 .welcome-top::after {
+  position: absolute;
   content: url("../images/background/welcome-divider.svg");
   line-height: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .welcome-bottom {
@@ -431,19 +437,19 @@ body {
 }
 
 .advantage-housing:before {
-  content: url("../images/advantages/advantage-house.svg");
+  content: url("../images/icons/advantage-house.svg");
   margin-bottom: 30px;
   height: 72px;
 }
 
 .advantage-food:before {
-  content: url("../images/advantages/advantage-food.svg");
+  content: url("../images/icons/advantage-food.svg");
   margin-bottom: 30px;
   height: 72px;
 }
 
 .advantage-souvenirs:before {
-  content: url("../images/advantages/advantage-souvenirs.svg");
+  content: url("../images/icons/advantage-souvenirs.svg");
   margin-bottom: 30px;
   height: 72px;
 }
@@ -462,13 +468,13 @@ body {
 }
 
 .advantages-first::after {
-  content: url("../images/advantages/advantages-photo-1.jpg");
+  content: url("../images/advantages-photo-1.jpg");
   width: 800px;
   height: 384px;
 }
 
 .advantages-second::before {
-  content: url("../images/advantages/advantages-photo-2.jpg");
+  content: url("../images/advantages-photo-2.jpg");
   width: 800px;
   height: 384px;
 }
@@ -739,7 +745,7 @@ body {
 
 .breadcrumbs-item:not(:first-child) {
   padding-left: 10px;
-  background-image: url("../images/arrows/breadcrumbs-arrow.svg");
+  background-image: url("../images/form-elements/breadcrumbs-arrow.svg");
   background-repeat: no-repeat;
   background-position: center left;
   background-size: 5px 8px;
@@ -852,7 +858,7 @@ body {
 }
 
 .filter-label-input[type="checkbox"]:checked + .filter-label-mark {
-  background-image: url("../images/forms/tick.svg");
+  background-image: url("../images/form-elements/tick.svg");
   background-repeat: no-repeat;
   background-size: 12px 10px;
   background-position: center;
@@ -1088,13 +1094,13 @@ body {
 }
 
 .catalog-layout-button-table {
-  background-image: url("../images/layout/icon-table.svg");
+  background-image: url("../images/icons/icon-table.svg");
 }
 .catalog-layout-button-slideshow {
-  background-image: url("../images/layout/icon-slideshow.svg");
+  background-image: url("../images/icons/icon-slideshow.svg");
 }
 .catalog-layout-button-list {
-  background-image: url("../images/layout/icon-list.svg");
+  background-image: url("../images/icons/icon-list.svg");
 }
 
 .catalog-layout-button:hover {
@@ -1368,7 +1374,7 @@ body {
   width: 53px;
   height: 53px;
   background-color: #F2F2F2;
-  background-image: url("../images/modal/modal-close.svg");
+  background-image: url("../images/form-elements/modal-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 13px 13px;
@@ -1388,7 +1394,7 @@ body {
 
 .modal-close-button:active {
   background-color: #E6E6E6;
-  background-image: url("../images/modal/cross.svg");
+  background-image: url("../images/form-elements/cross.svg");
 }
 
 .modal-fieldset-dates {
@@ -1422,7 +1428,7 @@ body {
   border: none;
   border-radius: 4px;
   outline: none;
-  background-image: url("../images/modal/calendar.svg");
+  background-image: url("../images/form-elements/calendar.svg");
   background-repeat: no-repeat;
   background-size: 15px 15px;
   background-position: center right 19px;
@@ -1531,29 +1537,29 @@ body {
 .amount-minus {
   left: 15px;
   top: 14px;
-  background-image: url("../images/modal/minus.svg");
+  background-image: url("../images/form-elements/minus.svg");
 }
 
 .amount-minus:hover {
-  background-image: url("../images/modal/minus-black.svg");
+  background-image: url("../images/form-elements/minus-black.svg");
 }
 
 .amount-minus:active {
-  background-image: url("../images/modal/minus.svg");
+  background-image: url("../images/form-elements/minus.svg");
 }
 
 .amount-plus {
   top: 14px;
   left: 98px;
-  background-image: url("../images/modal/plus.svg");
+  background-image: url("../images/form-elements/plus.svg");
 }
 
 .amount-plus:hover {
-  background-image: url("../images/modal/plus-black.svg");
+  background-image: url("../images/form-elements/plus-black.svg");
 }
 
 .amount-plus:active {
-  background-image: url("../images/modal/plus.svg");
+  background-image: url("../images/form-elements/plus.svg");
 }
 
 .modal-search-button {
@@ -1603,7 +1609,7 @@ body {
 }
 
 .tooltip-text::before {
-  content: url("../images/modal/tooltip-triangle.svg");
+  content: url("../images/form-elements/tooltip-triangle.svg");
   width: 19px;
   height: 9px;
   position: absolute;
@@ -1626,7 +1632,7 @@ body {
 .stars-item {
   width: 18px;
   height: 17px;
-  background-image: url("../images/star.svg");
+  background-image: url("../images/icons/star.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
