@@ -51,7 +51,7 @@ body {
   flex-direction: column;
   margin: 0 auto;
   width: 1200px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-catalog {
@@ -1070,6 +1070,19 @@ body {
   outline: 2px solid #E5E5E5;
   border: none;
   border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
+.catalog-layout-button-table {
+  background-image: url("../images/layout/icon-table.svg");
+}
+.catalog-layout-button-slideshow {
+  background-image: url("../images/layout/icon-slideshow.svg");
+}
+.catalog-layout-button-list {
+  background-image: url("../images/layout/icon-list.svg");
 }
 
 .catalog-layout-button:hover {
