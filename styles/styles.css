@@ -150,16 +150,17 @@ body {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .header-logo {
-  margin-right: 47px;
-  align-self: flex-start;
+  position: absolute;
 }
 
 /*Main navigation*/
 .navigation {
   display: flex;
+  margin-left: 170px;
 }
 
 .navigation-list {
@@ -191,13 +192,18 @@ body {
   padding: 20px 0;
 }
 
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
 .navigation-link:focus {
   outline:3px solid #83B3D3;
   border-radius: 4px;
 }
 
 .navigation-link:active {
-  opacity: 70%;
+  opacity: 0.3;
+  outline: none;
 }
 
 .navigation-link-current {
@@ -245,13 +251,18 @@ body {
   min-height: 66px;
 }
 
+.navigation-user-link:hover {
+  opacity: 0.6;
+}
+
 .navigation-user-link:focus {
   outline:3px solid #83B3D3;
   border-radius: 4px;
 }
 
 .navigation-user-link:active {
-  opacity: 70%;
+  opacity: 0.3;
+  outline: none;
 }
 
 .navigation-user-button {
