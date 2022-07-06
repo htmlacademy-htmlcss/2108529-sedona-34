@@ -310,6 +310,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-image: url("../images/background/welcome-top-background.jpg");
+  background-color: #E5E5E5;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 51px;
@@ -507,6 +508,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-image: url("../images/background/newsletter-background.jpg");
+  background-color: rgba(117, 97, 87, 0.8);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 97px 200px 94px 200px;
@@ -685,6 +687,7 @@ body {
 /* Inner Header */
 .catalog-filter {
   background-image: url("../images/background/catalog-filter-background.jpg");
+  background-color: rgba(117, 97, 87, 0.8);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   color: #ffffff;
