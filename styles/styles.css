@@ -722,17 +722,23 @@ body {
 }
 
 .breadcrumbs-item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .breadcrumbs-item:first-child {
-  width: 12px;
-  height: 12px;
+  width: 22px;
+  height: 20px;
+}
+
+.breadcrumbs-link-home {
   background-image: url("../images/icons/breadcrumbs-home.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
 }
 
 .breadcrumbs-item:not(:first-child) {
-  padding-left: 15px;
+  padding-left: 10px;
   background-image: url("../images/arrows/breadcrumbs-arrow.svg");
   background-repeat: no-repeat;
   background-position: center left;
@@ -742,7 +748,27 @@ body {
 .breadcrumbs-link {
   color: #fff;
   text-decoration: none;
+  display: block;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
 }
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus {
+  opacity: 1;
+  outline: 3px solid #83B3D3;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+  outline: none;
+}
+
 /* / === BREADCRUMBS === */
 
 
