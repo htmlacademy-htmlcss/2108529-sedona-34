@@ -121,8 +121,10 @@
                 <fieldset class="filter-group filter-price">
                   <legend class="filter-group-title">Стоимость, ₽:</legend>
                   <div class="price-input-container">
-                    <input class="filter-price-input" type="text" placeholder="от" />
-                    <input class="filter-price-input" type="text" placeholder="до" />
+                    <label class="visually-hidden" for="min-price">Минимальная цена</label>
+                    <input class="filter-price-input" type="text" placeholder="от" id="min-price"/>
+                    <label class="visually-hidden" for="max-price">Максимальная цена</label>
+                    <input class="filter-price-input" type="text" placeholder="до" id="max-price"/>
                   </div>
                   <div class="range-scale">
                     <div class="range-bar">
@@ -303,6 +305,7 @@
           <p class="section-description newsletter-description">Только полезная информация и никакого спама, честное
             бойскаутерское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru">
+            <label class="visually-hidden" for="newsletter-email">E-mail</label>
             <input class="newsletter-input" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                    required/>
             <button class="button newsletter-button" type="submit">Подписаться</button>
@@ -366,10 +369,10 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru">
           <fieldset class="modal-fieldset-dates">
             <label class="modal-form-label" for="arrival-date">Дата Заезда</label>
-            <input class="modal-form-input" type="text" id="arrival-date">
+            <input class="modal-form-input" type="text" id="arrival-date" required>
             <p class="modal-message">Мы не можем отправить вас в прошлое.</p>
             <label class="modal-form-label" for="departure-date">Дата Выезда</label>
-            <input class="modal-form-input" type="text" id="departure-date">
+            <input class="modal-form-input" type="text" id="departure-date" required>
             <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
           </fieldset>
 
@@ -393,25 +396,10 @@
                 <button class="input-people-amount-button amount-plus" type="button"><span class="visually-hidden">Прибавить</span></button>
               </div>
           </fieldset>
-          <button class="button modal-search-button" type="button">Найти</button>
+          <button class="button modal-search-button" type="submit">Найти</button>
         </form>
       </div>
     </div>
-
-    <!-- <div style="
-    position: absolute;
-    width: 1280px;
-    height: 2216px;
-    margin: 0 auto;
-    background-image: url('pixelperfect/catalog.jpg');
-    background-repeat: no-repeat;
-    opacity: 0.5;
-    left: 50%;
-    transform: translateX(-50%);
-    filter: invert(1);
-    pointer-events: none;
-    "></div> -->
-
     <script src="script.js"></script>
   </body>
 
