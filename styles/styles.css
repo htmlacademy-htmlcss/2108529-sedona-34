@@ -91,6 +91,13 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button:disabled,
+.button:disabled:hover {
+  background-color: #E5E5E5;
+  color: #fff;
+  cursor: not-allowed;
+}
+
 .section-title {
   font-size: 30px;
   line-height: 36px;
@@ -140,6 +147,12 @@ body {
 .select:active {
   outline: 2px solid #E6E6E6;
   color: rgba(51, 51, 51, 0.3);
+}
+
+.select:disabled {
+  outline: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  cursor: not-allowed;
 }
 
 /* Header */
